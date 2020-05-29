@@ -6,6 +6,7 @@
 #include <string.h>
 #include <fstream>
 
+//Developed by: Farit, Roger, Emmanuel and Joshua
 //estructuras-Liberias propias
 
 #include "estructura.h"
