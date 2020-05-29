@@ -25,10 +25,10 @@ int main()
     int SEL;
 
 
-    do
+    do//ciclo con do, while para el menu
     {
-        system("color 2" );
-        system("cls");
+        system("color 2" );//Cambia el color de la consola
+        system("cls");//Limpia pantalla
 
 
         switch(menu(SEL))//menu 1
@@ -115,10 +115,10 @@ void lectura(){ //funcion de lectura de archivo txt
     	if(op==1)
     	{
     		if(!archivo.is_open())
-    		archivo.open("tienda.txt",ios::in);
+    		archivo.open("tienda.txt",ios::in);//abriendo archivo
 
     		while(getline(archivo, linea))
-    		cout<< linea << endl;
+    		cout<< linea << endl;//mostrando datos del archivo.txt en panatalla
 
     		archivo.close();
     		system("pause");
@@ -185,9 +185,9 @@ void clientes()//fucion de clientes, pide datos
             {
             case 0:
             {
-                gets(cliente1.producto1);
+                gets(cliente1.producto1);//ingresando datos
                 fflush(stdin);
-                datos<<cliente1.producto1<<endl;
+                datos<<cliente1.producto1<<endl;//guardando esos datos
                 break;
             }
 
@@ -272,7 +272,7 @@ void clientes()//fucion de clientes, pide datos
     }
 
 
-    fflush(stdout);
+    fflush(stdout);//limpiando buffer 
 
     datos.close();//cerrando el archivo "Cliente.txt
     system("cls");//Limpiando la pantalla
