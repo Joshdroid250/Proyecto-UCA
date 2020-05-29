@@ -151,11 +151,11 @@ void clientes()
     gets(cliente1.Correo);
     fflush(stdin);
 
-    datos<<"Cedula: "cliente1.Cedula<<endl; //escribiendo en el archivo datos
-    datos<<"Nombre: "cliente1.Nombre<<endl;
-    datos<<"Telefono:"cliente1.Telefono<<endl;
-    datos<<"Direccion:"cliente1.Direccion<<endl;
-    datos<<"Correo"cliente1.Correo<<endl;
+    datos<<cliente1.Cedula<<endl; //escribiendo en el archivo datos
+    datos<<cliente1.Nombre<<endl;
+    datos<<cliente1.Telefono<<endl;
+    datos<<cliente1.Direccion<<endl;
+    datos<<cliente1.Correo<<endl;
 
     cout<<"Ingrese la cantidad de productos: ";
     cin>>j;
