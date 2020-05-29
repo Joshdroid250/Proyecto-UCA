@@ -18,7 +18,6 @@ typedef struct
     char producto8[100];
     char producto9[100];
     char producto10[100];
-    char monto[100];
 }texto;
 
 
