@@ -23,11 +23,12 @@ void lectura();
 int main()
 {
     int SEL;
-
-
+    
+    system("color 2" );//Cambia el color de la consola
+    
     do//ciclo con do, while para el menu
     {
-        system("color 2" );//Cambia el color de la consola
+        
         system("cls");//Limpia pantalla
 
 
