@@ -6,7 +6,7 @@
 #include <string.h>
 #include <fstream>
 
-//estructuras
+//estructuras-Liberias propias
 
 #include "estructura.h"
 
@@ -14,7 +14,7 @@
 using namespace std;
 
 
-//prototipos
+//prototipos de funciones
 int menu(int m);
 void menu2();
 void clientes();
@@ -24,8 +24,10 @@ int main()
 {
     int SEL;
 
+
     do
     {
+        system("color 2" );
         system("cls");
 
 
@@ -56,7 +58,9 @@ int main()
     return 0;
 }
 
-int menu(int m)
+
+
+int menu(int m)//Funcion de menu 1
 {
     cout<<"Facturacion de clientes-Tienda de electronica TecnoStar"<<endl;
     cout<<"----Developed by: Farit, Roger, Emmanuel and Joshua----"<<endl;
@@ -70,13 +74,13 @@ int menu(int m)
     fflush(stdin);
     fflush(stdout);//limpiando el buffer de salida para evitar errores
 
-    return m;
+    return m;//retorna m, ya que es un funcion int
 
 
 }
 
 //Menu 2 de nuestra tienda TecnoStar
-void menu2()//menu de clientes 
+void menu2()//menu de clientes
 {
     int k;
     cout<<"------------------TecnoStar-------------------"<<endl;
@@ -123,7 +127,7 @@ void lectura(){ //funcion de lectura de archivo txt
     }
 
 
-void clientes()
+void clientes()//fucion de clientes, pide datos
 {
     int i,j;
     texto cliente1; //"texto" es la estructura que esta en un header
@@ -133,7 +137,7 @@ void clientes()
     cout<<"Cliente-TecnoStar"<<endl;
     cout<<"Cedula de identidad: ";//piediendo datos
     gets(cliente1.Cedula);//ingreso del dato
-    fflush(stdin);//limpiando el buffer 
+    fflush(stdin);//limpiando el buffer
 
     cout<<"Nombre: ";
     gets(cliente1.Nombre);
@@ -156,12 +160,13 @@ void clientes()
     datos<<cliente1.Telefono<<endl;
     datos<<cliente1.Direccion<<endl;
     datos<<cliente1.Correo<<endl;
+    cout<<"----------------------------------"<<endl;
 
     cout<<"Ingrese la cantidad de productos: ";
     cin>>j;
     fflush(stdin);
 
-    if (j<=0 or j>10)
+    if (j<=0 or j>10)//ciclo de productos
     {
         cout<<"Cantidad de productos incorrecta debe ser mayor a 0 y menor o igual a 10"<<endl;
         system("pause");
@@ -269,8 +274,8 @@ void clientes()
 
     fflush(stdout);
 
-    datos.close();
-    system("cls");
+    datos.close();//cerrando el archivo "Cliente.txt
+    system("cls");//Limpiando la pantalla
 }
 
 
