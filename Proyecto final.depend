@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1590688099 source:c:\users\campo\desktop\proyecto final\main.cpp
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"estructura.h"
+
+1590687085 c:\users\campo\desktop\proyecto final\estructura.h
+
+1590736068 source:c:\users\campo\desktop\proyecto final (1)\proyecto final\main.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"estructura.h"
+
+1590717674 c:\users\campo\desktop\proyecto final (1)\proyecto final\estructura.h
+
