@@ -1,7 +1,7 @@
 #ifndef ESTRUCTURA_H_INCLUDED
 #define ESTRUCTURA_H_INCLUDED
 
-typedef struct
+typedef struct//Estrectura de tipo cadena para los datos
 {
     char Cedula[20];
     char Nombre[100];
