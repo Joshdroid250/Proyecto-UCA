@@ -56,6 +56,7 @@ int main()
         }
     }
     while(SEL!=2);
+    getch();
     return 0;
 }
 
