@@ -202,7 +202,6 @@ void clientes()//fucion de clientes, pide datos
             }
             case 2:
             {
-                cout<<"producto no.: "<<i+1;
                 gets(cliente1.producto3);
                 fflush(stdin);
                 datos<<cliente1.producto3<<endl;
